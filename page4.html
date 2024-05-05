@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Login - COLORS CULTURE</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+	    <img class="logo" src="logo.png" alt="logo of the brand">
+    <h3><a href="COLORS CULTURE.html">COLORS CULTURE</a></h3>
+	<div class="search-container">
+        <input type="text" class="search-input" placeholder="Search...">
+        <button class="search-button"><img src="search.png" alt="Search"></button>
+    </div>
+</br>
+</header>
+
+<section id="navigbar">
+
+<form class="navbar">
+  
+  <ul class="menu">
+
+    <li class="dropdown">
+	
+	    <label for="dropdown-toggle-1"><b>&#9776; Categories</b></label>
+		
+      <ul class="dropdown-menu">
+	    <li><a href="page2.html">Products (41)</a></li>
+        <li><a href="#">Farmland (9)</a></li>
+		<li><a href="#">Sesame Street x Colors Culture (7)</a></li>
+		<li><a href="#">Daily Stuff (1)</a></li>
+		<li><a href="#">Breezy Bay (7)</a></li>
+		<li><a href="#">North Star (2)</a></li>
+		<li><a href="#">Road Trip (3)</a></li>
+		<li><a href="#">Cougar Amor (11)</a></li>
+		<li><a href="#">Birthday Limited Edition (1)</a></li>
+		</ul>
+	</li>
+		
+	<li class="dropdown" style="margin-left: 600px;">	
+		<label for="dropdown-toggle-1"><b>About Us</b></label>
+      <ul class="dropdown-menu">
+        <li><a href="page3.html">FAQs</a></li>
+		<li><a href="#">How to buy</a></li>
+		<li><a href="#">Privacy policies</a></li>
+		
+		</ul>
+	</li>
+		
+	<li class="dropdown" style="margin-left: 30px;">	
+		<label for="dropdown-toggle-1"><a href="page4.html"><b>My Orders</b></a></label>
+	</li>	
+	<li class="dropdown" style="margin-left: 30px;">
+		<label for="dropdown-toggle-1"><a href="page5.html"><b>Contact Us</b></a></label>
+	</li>
+  </ul>
+</form>
+</section>
+<div class="login">
+<div class="login-box">
+    <h2>Login</h2>
+    <p>Choose your login method:</p>
+    <div class="login-options">
+        <button class="social-login">Login with social accounts</button>
+        <button class="email-login">Login with email</button>
+    </div>
+    <div id="social-login-options" style="display: none;">
+	</br>
+    </br>
+        <p>Login with:</p>
+		 </br>
+        <button class="facebook-login">Facebook</button>
+        <button class="google-login">Google</button>
+    </div>
+    <div id="email-login-options" style="display: none;">
+    </br>
+    </br>
+        <input type="text" id="email" placeholder="Email address">
+        <input type="password" id="password" placeholder="Password">
+    </div>
+    <p class="disclaimer">We will not post anything to your account.</p>
+</div>
+</div>
+</br>
+</br>
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector(".social-login").addEventListener("click", function() {
+        document.getElementById("social-login-options").style.display = "block";
+        document.getElementById("email-login-options").style.display = "none";
+    });
+
+    document.querySelector(".email-login").addEventListener("click", function() {
+        document.getElementById("social-login-options").style.display = "none";
+        document.getElementById("email-login-options").style.display = "block";
+    });
+});
+
+</script>
+</body>
+</html>
